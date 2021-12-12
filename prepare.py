@@ -12,8 +12,8 @@ with open('data\data.vcf', mode='r') as vcf:
                 name = 'chr' + i + '.vcf'
 
                 f = open(name, "w")
-                f.writelines(["%s\n" % item for item in headers])
-                f.writelines(["%s\n" % item for item in chr_data])
+                f.writelines(["%s" % item for item in headers])
+                f.writelines(["%s" % item for item in chr_data])
                 f.close()
 
                 i = line[0:2].strip()
