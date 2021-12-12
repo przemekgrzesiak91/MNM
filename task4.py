@@ -16,7 +16,7 @@ for chr in chromosomes:
 
                 if diff > 0:
                     chr_ins_tab.append(diff)
-                elif alt - ref <0:
+                elif diff <0:
                     diff = abs(diff)
                     chr_del_tab.append(diff)
     #Insertions
